@@ -3,6 +3,11 @@ import LudoBoard from "./LudoBoard.jsx"
 import TodoList from "./TodoList.jsx"
 import Lottery from "./Lottery.jsx"
 import {sum} from "./helper.js"
+import Form from "./Form"
+import CommentsForm from "./CommentsForm.jsx"
+import Comment from "./Comment.jsx"
+import Counter from "./Counter.jsx"
+import Joker from "./Joker.jsx"
 
 function App() {
 
@@ -11,10 +16,10 @@ function App() {
   }
 
   return(
-    <div>
-      <br></br>
-    <Lottery n={3} winCondition={winCondition} />
-    </div>
+    <>
+    {/* <CommentsForm /> */}
+    <Joker />
+    </>
   ) ;
   
 }
